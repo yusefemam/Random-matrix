@@ -3,9 +3,7 @@ import numpy as np
 name = input("Enter your name: ").strip().capitalize()
 firstname = name.split()[0]
 
-ask = input(
-    f"Hello, {firstname}, do you want to create a matrix? (yes/no): ").strip().lower()
-
+ask = input(f"Hello, {firstname}, do you want to create a matrix? (yes/no): ").strip().lower()
 while True:
     try:
         if ask == "yes":
@@ -49,7 +47,7 @@ while True:
                 ask2 = input(
                     "Do you want to perform another operation? (yes/no): ").strip().lower()
 
-            break  # الخروج بعد إنهاء العمليات
+            break 
 
         elif ask == "no":
             print("Okay, have a great day!")
